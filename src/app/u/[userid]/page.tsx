@@ -81,7 +81,7 @@ export default function UserProfilePage() {
   };
 
   const avatar =
-    "https://img.freepik.com/premium-photo/beautiful-anime-girl-profile-dark-gray-background_864588-33913.jpg";
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYVT4ct43XtyBW1YNbEP_1etY2mnTyo8s6Q&s";
 
   useEffect(() => {
     loadData();
@@ -105,8 +105,7 @@ export default function UserProfilePage() {
             <div>
               <h2 className="text-xl font-semibold mb-2">About</h2>
               <p className="text-muted-foreground">
-                This is where the user's bio would go. They can tell us about
-                themselves.
+                {user?.bio}
               </p>
             </div>
 

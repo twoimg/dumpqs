@@ -43,5 +43,5 @@ export const getUser = async (username: string) => {
 };
 
 export const getQuestions = async (username: string) => {
-  return api.get<QuestionsResponse>(`/posts/${username}`);
+  return api.get<QuestionsResponse>(`/posts/u/${username}`);
 };
